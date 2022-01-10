@@ -1,0 +1,92 @@
+*{
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box; 
+}
+
+body, html{
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 100%;
+}
+
+.contenedor{
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: relative;
+    perspective: 200px;
+}
+
+[class*="contenedor-paralaje"]{
+    height: 100vh;
+    position: relative;
+    transform-style: preserve-3d;
+}
+
+.contenedor-paralaje-1{
+    /* background-color: violet; */
+}
+
+.contenedor-paralaje-2{
+    background-color: #F7D2E1;
+}
+
+.capa{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.capa-fondo{
+    background-image: url(/img/Fondo.png);
+    background-position: center;
+    background-size: cover;
+    transform: translateZ(-600px) scale(4);
+    z-index: 0;
+}
+
+.capa-1{
+    background-image: url(img/1.png);
+    background-position: center;
+    background-size: cover;
+    transform: translateZ(-600px) scale(4);
+    z-index: 1;
+}
+
+.capa-2{
+    background-image: url(img/2.png);
+    background-position: center;
+    background-size: cover;
+    transform: translateZ(-600px) scale(4);
+    z-index: 2;
+}
+
+.capa-3{
+    background-image: url(img/3.png);
+    background-position: center;
+    background-size: cover;
+    transform: translateZ(-600px) scale(4);
+    z-index: 3;
+}
+
+.capa-4{
+    background-image: url(img/4.png);
+    background-position: center;
+    background-size: cover;
+    transform: translateZ(-500px) scale(4);
+    z-index: 4;
+}
+
+.contenedor-paralaje-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-paralaje-2 h1{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
